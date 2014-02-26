@@ -1,0 +1,35 @@
+body {
+    width:900px;
+    margin:0 auto;
+}
+
+.nav {
+    float:left;
+}
+
+.welcomeBar {
+    float:right;
+}
+
+.navList {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+.navList li {
+    display:inline;
+}
+
+label {
+    float:left;
+    text-align:right;
+    font-weight:bold;
+    width:20%;
+}
+
+
+
+
+
+

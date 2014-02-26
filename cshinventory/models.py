@@ -9,12 +9,15 @@ Base = declarative_base()
 class Owners(Base):
     __tablename__ = 'owners'
     id = Column(Integer, primary_key=True)
-    name = Column(String(128))
+    username = Column(String(128))
+    uuid = Column(String(128))
+
     item = relationship("Item")
     barrow = relationship("Barrowed")
 
-    def __init__(self, name):
-        self.name = name
+    def __init__(self, name, uuid=""):
+        self.username = name
+        self.uuid = uuid
 
     def __str__(self):
         string = "Owners: {" + str(self.id) + ": " + str(self.name) + "}"
